@@ -44,7 +44,7 @@ plt.savefig('Pairplot.png')
 
 #creating a correlation matrix
 plt.figure(figsize = (12, 8))
-corr_matrix = iris_data.select_dtypes(include=['float64', 'int64']).corr()
+corr_matrix = new_iris_data.select_dtypes(include=['float64', 'int64']).corr()
 sns.heatmap(corr_matrix, annot = True, cmap = 'Reds')
 plt.savefig('Correlation_heatmap.png')
 
