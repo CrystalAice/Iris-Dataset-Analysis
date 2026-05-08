@@ -48,4 +48,4 @@ corr_matrix = iris_data.select_dtypes(include=['float64', 'int64']).corr()
 sns.heatmap(corr_matrix, annot = True, cmap = 'Reds')
 plt.savefig('Correlation_heatmap.png')
 
-print(\n'Analysis Complete! Go to ReadMe file for a summary of the findings.')
+print('\nAnalysis Complete! Go to FINDINGS file for a summary of the findings.')
